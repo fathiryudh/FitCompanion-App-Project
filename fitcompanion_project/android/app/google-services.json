@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653868194313",
+    "project_id": "fitcompanion-project",
+    "storage_bucket": "fitcompanion-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653868194313:android:c741d26265dac1714e36d8",
+        "android_client_info": {
+          "package_name": "com.example.fitcompanion_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpGeNIDIKOsvnB1loKeXKXayiAh93ZZqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
