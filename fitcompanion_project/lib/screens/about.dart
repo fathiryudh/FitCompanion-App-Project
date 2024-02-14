@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'profile.dart';
 
@@ -44,7 +45,7 @@ class About extends StatelessWidget {
                 },
               ),
               title: Text(
-                'Home',
+                'About',
                 style: TextStyle(color: Colors.black),
               ),
               elevation: 0.0,
@@ -55,11 +56,7 @@ class About extends StatelessWidget {
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CompanyInfoPage()),
-                      );
+                      Get.to(() => CompanyInfoPage());
                     },
                     child: Text(
                       'Company Info',
@@ -73,11 +70,7 @@ class About extends StatelessWidget {
                   SizedBox(height: 20),
                   InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => DeveloperInfoPage()),
-                      );
+                      Get.to(() => DeveloperInfoPage());
                     },
                     child: Text(
                       'Developer Info',

@@ -112,7 +112,7 @@ class _FitCompanionChatState extends State<FitCompanionChat> {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(Icons.send),
+                  icon: Icon(Icons.send_outlined),
                   onPressed: _sendMessage,
                 ),
               ],

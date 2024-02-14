@@ -98,7 +98,7 @@ class _FavoriteExercisesScreenState extends State<FavoriteExercisesScreen> {
         backgroundColor:
             Color(0xFFEBEBEB),
         title: Text(
-          'Home',
+          'Favourites',
           style: TextStyle(color: Colors.black),
         ),
         elevation: 0.0,

@@ -18,12 +18,18 @@ class MapPage extends StatefulWidget {
 
 class _MapPageState extends State<MapPage> {
   Completer<GoogleMapController> _controller = Completer();
-  BitmapDescriptor _locIcon;
-  final Set<Marker> listMarkers = {};
+  Set<Marker> listMarkers = {};
 
   @override
   void initState() {
     super.initState();
+    // Add marker to the listMarkers set
+    listMarkers.add(
+      Marker(
+        markerId: MarkerId('MyLocation'),
+        position: LatLng(widget.latitude, widget.longitude),
+      ),
+    );
   }
 
   @override
@@ -40,9 +46,7 @@ class _MapPageState extends State<MapPage> {
           mapType: MapType.hybrid,
           myLocationEnabled: true,
           initialCameraPosition: _currentPos,
-          markers: _locIcon != null
-              ? Set.from(listMarkers)
-              : {},
+          markers: listMarkers,
           onMapCreated: (GoogleMapController controller) {
             _controller.complete(controller);
           },

@@ -15,6 +15,7 @@ class _MainMenu extends State<MainMenu> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: tabs[_currentindex],
         bottomNavigationBar: BottomNavigationBar(

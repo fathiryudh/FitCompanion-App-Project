@@ -193,13 +193,8 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                               style: TextStyle(color: Colors.white),
                             ),
                             onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      ExerciseDetailScreen(exercise: exercise),
-                                ),
-                              );
+                              Get.to(() =>
+                                  ExerciseDetailScreen(exercise: exercise));
                             },
                             trailing: IconButton(
                               icon: Icon(
